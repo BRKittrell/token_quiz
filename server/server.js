@@ -4,9 +4,9 @@ const app = express()
 
 const PORT = 3543
 
+app.use(cors());
 
-
-app.use('/api/auth', require('./routes/jwtAuth'))
+app.use('/api/auth', require('../routes/jwtAuth'))
 
 
 app.listen(PORT, () => {

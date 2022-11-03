@@ -1,6 +1,7 @@
 const express = require('express')
 const {generate} = require('../utility/tokenGeneration')
 const router = express.Router()
+const cors = require('cors')
 
 router.get('/', async (req, res) => {
     try {
@@ -15,4 +16,3 @@ router.get('/', async (req, res) => {
 })
 
 module.exports = router
-
